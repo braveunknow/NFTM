@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-const TimelesNFT = artifacts.require('TimelesNFT')
+const NFT = artifacts.require('NFT')
 
 module.exports = async (deployer) => {
   const accounts = await web3.eth.getAccounts()
 
-  await deployer.deploy(TimelesNFT, 'Timeles NFTs', 'TNT', 10, accounts[1])
+  await deployer.deploy(NFT, 'Timeles NFTs', 'TNT', 10, accounts[1])
 }

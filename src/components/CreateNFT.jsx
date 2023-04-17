@@ -43,7 +43,7 @@ const CreateNFT = () => {
 
     try {
       const created = await client.add(fileUrl)
-      const metadataURI = `https://ipfs.io/ipfs/${created.path}`
+      const metadataURI = `https://bn-nftmarketplace.infura-ipfs.io/ipfs/${created.path}`
       const nft = { title, price, description, metadataURI }
 
       setLoadingMsg('Intializing transaction...')
